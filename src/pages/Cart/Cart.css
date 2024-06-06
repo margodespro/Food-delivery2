@@ -1,0 +1,121 @@
+.cart {
+	margin-top: 100px;
+}
+
+.cart-items {
+	background-color: #f9f9f9;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 20px;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cart-items-title {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+	align-items: center;
+	color: #808080;
+	font-size: max(1vw, 12px);
+	font-weight: bold;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+.cart-items-item {
+	display: grid;
+	grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0;
+}
+
+.cart-items-item img {
+	width: 80px;
+	border-radius: 4px;
+}
+
+.cart-items-item p {
+	margin: 0;
+}
+
+.cart-items-item button {
+	background-color: #ff6961;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	padding: 8px 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.cart-items-item button:hover {
+	background-color: #d8433e;
+}
+.cart-bottom {
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
+	gap: max(12vw,20px);
+}
+.cart-total {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.cart-total-details {
+	display: flex;
+	justify-content: space-between;
+	color: #000000;
+}
+.cart-total hr {
+	margin: 10px 0;
+}
+.cart-total button {
+	border: none;
+	color: #fff;
+	background-color: #ff6961;
+	width: max(15vw,200px);
+	padding: 12px 0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.cart-promocode {
+	flex: 1;
+}
+.cart-promocode p {
+	color: #555;
+}
+.cart-promocode-input {
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+	border-radius: 4px;
+}
+.cart-promocode-input input {
+	background: transparent;
+	border: none;
+	outline: none;
+	padding-left: 10px;
+}
+.cart-promocode-input button {
+	width: max(10vw,150px);
+	padding: 12px 5px;
+	margin-bottom: 29px;
+	margin-left: 10px;
+	background-color: tomato;
+	border: none;
+	color: #fff;
+	border-radius: 4px;
+}
+@media (max-width:750px) {
+	.cart-bottom {
+		flex-direction: column-reverse;
+	}
+	.cart-promocode {
+		justify-content: start;
+	}
+}
